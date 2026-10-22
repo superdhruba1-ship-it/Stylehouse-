@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style House | Dress Shop (Demo Template)</title>
+<style>
+  :root { --main:#c2185b; --dark:#1f1f1f; --light:#fff7fa; --accent:#ffb300; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--dark); background:#fff; line-height:1.6; }
+  header { position:sticky; top:0; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.08); z-index:10; }
+  .bar { max-width:1000px; margin:auto; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-size:1.4rem; font-weight:800; color:var(--main); }
+  nav a { margin-left:16px; text-decoration:none; color:var(--dark); font-weight:500; font-size:.95rem; }
+  .hero { background:linear-gradient(135deg,#c2185b,#7b1fa2); color:#fff; text-align:center; padding:70px 16px; }
+  .hero h1 { font-size:2rem; margin-bottom:10px; }
+  .hero p { max-width:520px; margin:0 auto 24px; opacity:.95; }
+  .btn { display:inline-block; background:var(--accent); color:#222; padding:12px 26px; border-radius:30px; font-weight:700; text-decoration:none; }
+  .btn.green { background:#25d366; color:#fff; }
+  section { max-width:1000px; margin:auto; padding:48px 16px; }
+  h2 { text-align:center; font-size:1.6rem; margin-bottom:28px; color:var(--main); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+  .card { border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,.1); background:#fff; }
+  .img { height:200px; display:flex; align-items:center; justify-content:center; font-size:3.5rem; }
+  .card .info { padding:14px; }
+  .card h3 { font-size:1.05rem; }
+  .price { color:var(--main); font-weight:700; margin:4px 0 10px; }
+  .card a { display:block; text-align:center; background:#25d366; color:#fff; padding:9px; border-radius:8px; text-decoration:none; font-weight:600; font-size:.9rem; }
+  .why { background:var(--light); }
+  .why .grid { text-align:center; }
+  .why .item { padding:10px; }
+  .why .ico { font-size:2rem; }
+  .contact { text-align:center; }
+  .contact p { margin:6px 0; }
+  footer { background:var(--dark); color:#bbb; text-align:center; padding:18px 16px; font-size:.85rem; }
+  .float { position:fixed; right:16px; bottom:16px; background:#25d366; color:#fff; padding:14px 18px; border-radius:40px; text-decoration:none; font-weight:700; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  @media(max-width:560px){ nav{display:none;} .hero h1{font-size:1.6rem;} }
+</style>
+</head>
+<body>
+
+<!-- THINGS TO CHANGE:
+ 1. Shop name: search for "Style House" and replace it
+ 2. WhatsApp number: replace 919999999999 (91 + 10-digit number)
+ 3. Address, timings, product names and prices
+-->
+
+<header>
+  <div class="bar">
+    <div class="logo">👗 Style House</div>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Latest Fashion, Within Your Budget</h1>
+  <p>Kurtis, lehengas, gowns and western dresses. Pick your favourite and order directly on WhatsApp.</p>
+  <a class="btn" href="#collection">View Collection</a>
+</div>
+
+<section id="collection">
+  <h2>Our Collection</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="img" style="background:#fde4ee">👗</div>
+      <div class="info"><h3>Designer Kurti</h3><div class="price">Starting ₹799</div>
+      <a href="https://wa.me/919999999999?text=I want to know about Designer Kurti">Ask on WhatsApp</a></div>
+    </div>
+    <div class="card">
+      <div class="img" style="background:#ede7f6">🥻</div>
+      <div class="info"><h3>Party Wear Lehenga</h3><div class="price">Starting ₹2,499</div>
+      <a href="https://wa.me/919999999999?text=I want to know about Party Wear Lehenga">Ask on WhatsApp</a></div>
+    </div>
+    <div class="card">
+      <div class="img" style="background:#fff3e0">👚</div>
+      <div class="info"><h3>Western Tops & Dresses</h3><div class="price">Starting ₹599</div>
+      <a href="https://wa.me/919999999999?text=I want to know about Western Dresses">Ask on WhatsApp</a></div>
+    </div>
+    <div class="card">
+      <div class="img" style="background:#e3f2fd">👘</div>
+      <div class="info"><h3>Wedding Special Gown</h3><div class="price">Starting ₹3,999</div>
+      <a href="https://wa.me/919999999999?text=I want to know about Wedding Gowns">Ask on WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="why" id="why">
+  <section>
+    <h2>Why Choose Us</h2>
+    <div class="grid">
+      <div class="item"><div class="ico">✨</div><h3>Great Quality</h3><p>Every dress is quality-checked before sale.</p></div>
+      <div class="item"><div class="ico">💰</div><h3>Fair Prices</h3><p>Latest designs that fit your budget.</p></div>
+      <div class="item"><div class="ico">🔄</div><h3>Easy Exchange</h3><p>Wrong size? We offer easy exchange.</p></div>
+      <div class="item"><div class="ico">📱</div><h3>WhatsApp Orders</h3><p>See
